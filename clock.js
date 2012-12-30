@@ -1,21 +1,28 @@
-window.onload = function() {
+var update = function() {
 	var on = "white";
 	var off = "#303030";
-	var hour = 12;
-	var minutes = 25;
+	current = new Date();
+	var hour = current.getHours();
+	if (hour > 12) {hour -= 12};
+	var minutes = current.getMinutes();
 	
 	document.getElementById("its").style.color=on;
 	document.getElementById("minutes").style.color=on;
 
 	// set modifier
-	if (minutes < 3 || minutes > 57){
+	if (minutes < 3){
 		document.getElementById("oclock").style.color=on;
 		document.getElementById("minutes").style.color=off;
 	}else if (minutes < 33){
 		document.getElementById("past").style.color=on;
 	}else if (minutes <= 57){
 		document.getElementById("to").style.color=on;
-		hour =(hour === 12)? 1: hour + 1;
+		hour === 12 ? hour = 1: hour += 1;
+		minutes = 60 - minutes;
+	}else{
+		document.getElementById("oclock").style.color=on;
+		document.getElementById("minutes").style.color=off;
+		hour === 12 ? hour = 1: hour += 1;
 		minutes = 60 - minutes;
 	}
 
@@ -80,3 +87,6 @@ window.onload = function() {
 			break;
 	}
 }
+
+//onload = update;
+setInterval(update,1000);
