@@ -54,7 +54,6 @@ var update = function() {
 		}else if (minutes < 33){
 			document.getElementById("half").style.color=on;
 			document.getElementById("minutes").style.color=off;
-
 		}
 	}
 
