@@ -18,6 +18,6 @@ There are two versions of the clock included. The first is just basic html/css/j
 Acknowledgments
 ---------------
 
-Thanks go to Peter Beens who posted the phot on Google plus and suggested it as a programming exercise!
+Thanks go to Peter Beens who posted the photo on Google plus and suggested it as a programming exercise!
 
-Also thanks to everyone CodeAcademy.com where I was working on tutorials that provided me the inspiration to do this.
+Also thanks to CodeAcademy.com where I was working on tutorials that provided me the inspiration to do this.
