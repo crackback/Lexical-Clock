@@ -4,7 +4,7 @@ Lexical Clock
 
 This was just a little practice project to play with javascript, html, and css. I recreated a working version of the clock in the photo.
 
-.. image:: clock.jpg
+.. image:: /clock.jpg
 
 
 
